@@ -4,13 +4,13 @@ fn main() {
     let input = fs::read_to_string("input").unwrap();
 
     let digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-    let digits = digits.map(|t| t.bytes().collect::<Vec<_>>());
+    let digits = digits.map(|t| t.as_bytes());
 
     let sum = input.lines().map(|l| {
         let mut first = None;
         let mut last = 0;
 
-        let chars = l.bytes().collect::<Vec<_>>();
+        let chars = l.as_bytes();
 
         for (i, c) in chars.iter().enumerate(){
             let mut digit = None;
