@@ -1,4 +1,4 @@
-# Ondřej's Advent of Code 2022 solutions
+# Ondřej's Advents of Code solutions
 
 This repository exists for archival purposes, no active development is
 expected. The solutions have the following issues:
